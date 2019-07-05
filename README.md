@@ -2,7 +2,7 @@
 
 > Adds community files to 10up repos that haven't setup their own.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![MIT License](https://img.shields.io/github/license/10up/.github.svg)](https://github.com/10up/.github/blob/master/LICENSE.md)
 
 ## Overview
 
