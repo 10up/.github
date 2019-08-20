@@ -51,6 +51,6 @@ Describe the actions you performed (e.g., commands you ran, text you typed, butt
 
 <!-- Enter any applicable Issues here -->
 
-## Changelog Entry
+### Changelog Entry
 
 <!-- Add sample CHANGELOG.md entry for this PR, noting whether this is something being Added / Changed / Deprecated / Removed / Fixed / or Security related. -->
