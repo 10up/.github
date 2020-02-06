@@ -29,9 +29,7 @@ assignees: ''
  - Device: <!-- [e.g. MacBook] -->
  - OS: <!-- [e.g. MacOS 10.14.3] -->
  - Browser and version: <!-- [e.g. Firefox 65.0.1, Chrome 73.0.3683.75, Safari 12.0.3] -->
- - Plugins and version: <!-- [e.g. 1.1.0] -->
- - Theme and version: <!-- [e.g. Twenty Nineteen 1.3] -->
- - Other installed plugin(s) and version(s):
+ - Site Health Info: <!-- Go to Tools > Site Health > Info tab, click "Copy site info to clipboard", and paste those details here -->
 
 **Additional context**
 <!-- Add any other context about the problem here. -->
