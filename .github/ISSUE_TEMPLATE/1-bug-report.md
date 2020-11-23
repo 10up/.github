@@ -29,14 +29,13 @@ assignees: ''
  - Device: <!-- [e.g. MacBook] -->
  - OS: <!-- [e.g. MacOS 10.14.3] -->
  - Browser and version: <!-- [e.g. Firefox 65.0.1, Chrome 73.0.3683.75, Safari 12.0.3] -->
- - WordPress version: <!-- [e.g., 5.3.2] -->
- <!-- If your WordPress version is below 5.2, then please fill out the Plugins and Themes items below. -->
- - Plugins and version: <!-- [e.g. PluginA 1.0.0, PluginB 2.1.0, PluginC 3.2.1] -->
- - Theme and version: <!-- [e.g. Twenty Nineteen 1.3] -->
- <!-- If your WordPress version is 5.2 or higher, then please fill out the Site Health Info details below. -->
- - <details><summary>Site Health Info:</summary>
-   <!-- Go to Tools > Site Health > Info tab, click "Copy site info to clipboard", and paste those details here. -->
-   </details>
+
+**WordPress information**
+<!-- If your WordPress version is below 5.2, then please provide your WordPress, Plugins, Themes versions here. -->
+<!-- If your WordPress version is 5.2 or higher, then please fill out the Site Health Info details below. -->
+<details><summary>Site Health info:</summary>
+<!-- Go to Tools > Site Health > Info tab, click "Copy site info to clipboard", and paste those details here. -->
+</details>
 
 **Additional context**
 <!-- Add any other context about the problem here. -->
