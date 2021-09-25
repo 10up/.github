@@ -20,7 +20,7 @@ With a body of work honored with a dozen Webby nods and two Emmy Award nominatio
 [10up's Open Source Practice](https://10up.com/blog/2019/open-source-practice/) is committed to the cultivation of a vibrant and healthy open source ecosystem. Our own open projects are often inspired by recurring needs and patterns we see across 10up clients, including:
 * [Distributor](https://distributorplugin.com/), a WordPress plugin that makes it easy to syndicatea nd reuse content across your websites.
 * [ElasticPress](https://www.elasticpress.io/), the only fully-integrated solution for adding the power of Elasticsearch to a WordPress site.
-* [ClassifAI](https://github.com/10up/classifai), a WordPress plugin that leverages cloud-based services like IBM Watson and Microsoft Azqure AI to augment WordPress-powered websites with artificial intelligence and machine learning technology.
+* [ClassifAI](https://classifaiplugin.com/), a WordPress plugin that leverages cloud-based services like IBM Watson and Microsoft Azqure AI to augment WordPress-powered websites with artificial intelligence and machine learning technology.
 
 Our full complement of over 100 open source solutions are [available on GitHub](https://github.com/orgs/10up/repositories).
 
