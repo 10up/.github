@@ -2,7 +2,7 @@
 
 At 10up, we believe digital innovation often happens at the intersection of expertise in design and engineering. Our global team of 250+ experts aims to make a better web with finely crafted websites, apps, and tools for content creators, leveraging open source technologies like WordPress and React.
 
-From delivering complex WordPress instances at scale, to managing substantial platform migrations, to reimaging user experiences for global brands, 10up offers a range of expert services to advance our clients’ initiatives:
+From delivering complex WordPress instances at scale, to managing substantial platform migrations, to re-imagining user experiences for global brands, 10up offers a range of expert services to advance our clients’ initiatives:
 
 * Digital strategy
 * Project management (agile and waterfall)
