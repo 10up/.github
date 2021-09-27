@@ -2,7 +2,7 @@
 
 At 10up, we believe digital innovation often happens at the intersection of expertise in design and engineering. Our global team of 250+ experts aims to make a better web with finely crafted websites, apps, and tools for content creators, leveraging open source technologies like WordPress and React.
 
-From delivering complex WordPress instances at scale, to managing substantial platform migrations, to reimaging user experiences for global brands, 10up offers a range of expert services to advance our clients’ initiatives:
+From delivering complex WordPress instances at scale, to managing substantial platform migrations, to re-imagining user experiences for global brands, 10up offers a range of expert services to advance our clients’ initiatives:
 
 * Digital strategy
 * Project management (agile and waterfall)
@@ -18,9 +18,9 @@ With a body of work honored with a dozen Webby nods and two Emmy Award nominatio
 
 ### Our Open Source Solutions
 [10up's Open Source Practice](https://10up.com/blog/2019/open-source-practice/) is committed to the cultivation of a vibrant and healthy open source ecosystem. Our own open projects are often inspired by recurring needs and patterns we see across 10up clients, including:
-* [Distributor](https://github.com/10up/distributor), a WordPress plugin that makes it easy to syndicatea nd reuse content across your websites.
+* [Distributor](https://github.com/10up/distributor), a WordPress plugin that makes it easy to syndicate and reuse content across your websites.
 * [ElasticPress](https://github.com/10up/ElasticPress), the only fully-integrated solution for adding the power of Elasticsearch to a WordPress site.
-* [ClassifAI](https://github.com/10up/classifai), a WordPress plugin that leverages cloud-based services like IBM Watson and Microsoft Azqure AI to augment WordPress-powered websites with artificial intelligence and machine learning technology.
+* [ClassifAI](https://github.com/10up/classifai), a WordPress plugin that leverages cloud-based services like IBM Watson and Microsoft Azure AI to augment WordPress-powered websites with artificial intelligence and machine learning technology.
 
 Our full complement of over 100 open source solutions are [available on GitHub](https://github.com/orgs/10up/repositories).
 
