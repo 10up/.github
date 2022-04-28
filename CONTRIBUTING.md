@@ -41,3 +41,9 @@ The `develop` branch is the development branch which means it contains the next 
 11. Check WordPress.org: Ensure that the changes are live on https://wordpress.org/plugins/plugin-name/. This may take a few minutes.
 12. Close milestone: Edit the [X.Y.Z milestone](/milestone/#) with release date (in the `Due date (optional)` field) and link to GitHub release (in the `Description` field), then close the milestone.
 13. Punt incomplete items: If any open issues or PRs which were milestoned for `X.Y.Z` do not make it into the release, update their milestone to `X.Y.Z+1`, `X.Y+1.0`, `X+1.0.0` or `Future Release`.
+
+### What to do if things go wrong
+
+If you run into issues during the release process and things have NOT fully deployed to WordPress.org / npm / whatever external-to-GitHub location that we might be publishing to, then the best thing to do will be to delete any Tag (e.g., https://github.com/ORG/REPO/releases/tag/TAGNAME) or Release that's been created, research what's wrong, and once things are resolved work on re-tagging and re-releasing on GitHub and publishing externally where needed.
+
+If you run into issues during the release process and things HAVE deployed to WordPress.org / npm / whatever external-to-GitHub location that we might be publishing to, then the best thing to do will be to research what's wrong and once things are resolved work on a patch release and tag on GitHub and publishing externally where needed.  At the top of the changelog / release notes it's best to note that its a hotfix to resolve whatever issues were found after the previous release.
