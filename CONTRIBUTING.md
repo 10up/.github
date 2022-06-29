@@ -24,7 +24,7 @@ For more on how 10up writes and manages code, check out our [10up Engineering Be
 
 ## Workflow
 
-The `develop` branch is the development branch which means it contains the next version to be released.  `stable` contains the current latest release and `master` contains the corresponding stable development version.  Always work on the `develop` branch and open up PRs against `develop`.
+The `develop` branch is the development branch which means it contains the next version to be released.  `stable` contains the current latest release and `trunk` contains the corresponding stable development version.  Always work on the `develop` branch and open up PRs against `develop`.
 
 ## Release instructions
 
@@ -34,9 +34,9 @@ The `develop` branch is the development branch which means it contains the next 
 4. Props: update `CREDITS.md` file with any new contributors, confirm maintainers are accurate.
 5. New files: Check to be sure any new files/paths that are unnecessary in the production version are included in `.gitattributes` or `.distignore`.
 6. Readme updates: Make any other readme changes as necessary. `CHANGELOG.md` and `README.md` are geared toward GitHub and `readme.txt` contains WordPress.org-specific content. The two are slightly different.
-7. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `master` (`git checkout master && git merge --no-ff develop`). `master` contains the stable development version.
-8. Push: Push your master branch to GitHub (e.g. `git push origin master`).
-9. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `master` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [X.Y.Z milestone](/milestone/#?closed=1).
+7. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk` (`git checkout trunk && git merge --no-ff develop`). `trunk` contains the stable development version.
+8. Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
+9. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [X.Y.Z milestone](/milestone/#?closed=1).
 10. SVN: Wait for the [GitHub Action](/actions) to finish deploying to the WordPress.org repository. If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
 11. Check WordPress.org: Ensure that the changes are live on https://wordpress.org/plugins/plugin-name/. This may take a few minutes.
 12. Close milestone: Edit the [X.Y.Z milestone](/milestone/#) with release date (in the `Due date (optional)` field) and link to GitHub release (in the `Description` field), then close the milestone.
