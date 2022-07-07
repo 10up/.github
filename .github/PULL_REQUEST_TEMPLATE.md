@@ -4,7 +4,7 @@ Filling out this template is required.  Any PR that does not include enough info
 
 ### Description of the Change
 <!--
-We must be able to understand the design of your change from this description.  The maintainer reviewing this PR may not have worked with this code recently, so please provide as much deatil as possible.
+We must be able to understand the design of your change from this description.  The maintainer reviewing this PR may not have worked with this code recently, so please provide as much detail as possible.
 
 Where possible, please also include:
 - verification steps to ensure your change has the desired effects and has not introduced any regressions
@@ -13,13 +13,13 @@ Where possible, please also include:
 - screenshots or screencasts
 -->
 
-<!-- Enter any applicable Issue number(s) here that will be closed/resolved by this PR.-->
+<!-- Enter any applicable Issue number(s) here that will be closed/resolved by this PR. -->
 Closes #
 
 
 ### Changelog Entry
 <!--
-Please include a summary for this PR, noting whether this is something being Added / Changed / Deprecated / Removed / Fixed / or Security related.  You can replace the sample entries after this comment block with the single changelog entry line for this PR.-->
+Please include a summary for this PR, noting whether this is something being Added / Changed / Deprecated / Removed / Fixed / or Security related.  You can replace the sample entries after this comment block with the single changelog entry line for this PR. -->
 > Added - New feature
 > Changed - Existing functionality
 > Deprecated - Soon-to-be removed feature
