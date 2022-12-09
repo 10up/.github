@@ -36,8 +36,8 @@ The `develop` branch is the development branch which means it contains the next 
 6. Readme updates: Make any other readme changes as necessary. `CHANGELOG.md` and `README.md` are geared toward GitHub and `readme.txt` contains WordPress.org-specific content. The two are slightly different.
 7. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk`, ensuring you pull the most recent changes into `develop` first (`git checkout develop && git pull origin develop && git checkout trunk && git merge --no-ff develop`). `trunk` contains the stable development version.
 8. Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
-9. Compare develop and trunk to ensure no additional changes were missed. Visit [REPOSITORY_URL]/compare/trunk...develop
-10. Test the pre-release ZIP locally by downloading it from the **Build release zip** action artifact to ensure the plugin doesn't break after release.
+9. Compare `trunk` to `develop` to ensure no additional changes were missed. Visit [REPOSITORY_URL]/compare/trunk...develop
+10. Test the pre-release ZIP locally by downloading it from the **Build release zip** action artifact and installing it locally. Ensure this zip has all the files we expect, that it installs and activates correctly and that all basic functionality is working.
 11. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [X.Y.Z milestone](/milestone/#?closed=1).
 12. SVN: Wait for the [GitHub Action](/actions) to finish deploying to the WordPress.org repository. If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
 13. Check WordPress.org: Ensure that the changes are live on https://wordpress.org/plugins/plugin-name/. This may take a few minutes.
