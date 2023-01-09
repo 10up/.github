@@ -1,0 +1,5 @@
+# These owners will be the default owners for everything in the repo. Unless a later match takes precedence, @jeffpaul, as primary maintainer will be requested for review when someone opens a Pull Request.
+*                   @jeffpaul
+
+# Other directory/file specifics
+/profile/           @pcrumm
