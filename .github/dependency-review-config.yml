@@ -9,6 +9,7 @@ name: GPL-Compatible License Policy
 # Possible values: Any `spdx_id` value(s) from https://docs.github.com/en/rest/licenses 
 # The following list is an attempt to match exactly what's listed on https://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses as GPL Compatible (currently ignoring the FSF Free/Libre and OSI Approved column data from the SPDX License List at https://spdx.org/licenses/):
 allow-licenses:
+- 0BSD
 - AGPL-3.0
 - AGPL-3.0-only
 - Apache-2.0
