@@ -37,7 +37,7 @@ The `develop` branch is the development branch which means it contains the next 
 7. Readme updates: Make any other readme changes as necessary. `README.md` is geared toward GitHub and `readme.txt` contains WordPress.org-specific content. The two are slightly different.
 8. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk`, ensuring you pull the most recent changes into `develop` first (`git checkout develop && git pull origin develop && git checkout trunk && git merge --no-ff develop`). `trunk` contains the stable development version.
 9. Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
-10. Compare `trunk` to `develop` to ensure no additional changes were missed. Visit [REPOSITORY_URL]/compare/trunk...develop
+10. [Compare](/compare/trunk...develop) `trunk` to `develop` to ensure no additional changes were missed.
 11. Test the pre-release ZIP locally by downloading it from the **Build release zip** action artifact and installing it locally. Ensure this zip has all the files we expect, that it installs and activates correctly and that all basic functionality is working.
 12. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [milestone](/milestone/#?closed=1).
 13. SVN: Wait for the [GitHub Action](/actions) to finish deploying to the WordPress.org repository. If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
