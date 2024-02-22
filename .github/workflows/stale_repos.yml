@@ -11,17 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-    steps:
     - name: Run stale_repos tool
       uses: github/stale-repos@v1
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN_READ_PUBLIC_REPOS }}
         ORGANIZATION: 10up
-        EXEMPT_TOPICS: "keep,template"
         INACTIVE_DAYS: 365
-        ACTIVITY_METHOD: "pushed"
+        ACTIVITY_METHOD: "default_branch_updated"
 
     # This next step updates an existing issue. If you want a new issue every time, remove this step and remove the `issue-number: ${{ env.issue_number }}` line below.
     - name: Check for the stale report issue
