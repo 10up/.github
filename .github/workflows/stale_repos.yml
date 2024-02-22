@@ -11,18 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
+
     - name: Run stale_repos tool
       uses: github/stale-repos@v1
       env:
-        GH_TOKEN: ${{ secrets.GH_PAT_REPO }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN_READ_PUBLIC_REPOS }}
         ORGANIZATION: 10up
-        EXEMPT_TOPICS: "keep,template"
         INACTIVE_DAYS: 365
+        ACTIVITY_METHOD: "default_branch_updated"
 
-    - name: Create issue
-      uses: peter-evans/create-issue-from-file@v4
+    # This next step updates an existing issue. If you want a new issue every time, remove this step and remove the `issue-number: ${{ env.issue_number }}` line below.
+    - name: Check for the stale report issue
+      run: |
+        ISSUE_NUMBER=$(gh search issues "Stale repository report" --match title --json number --jq ".[0].number")
+        echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_ENV"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create issue from STALE_REPOS.md
+      uses: peter-evans/create-issue-from-file@v5
       with:
+        issue-number: ${{ env.issue_number }}
         title: Stale repository report
         content-filepath: ./STALE_REPOS.md
         assignees: jeffpaul
-        token: ${{ secrets.GH_PAT_REPO }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
