@@ -29,20 +29,21 @@ The `develop` branch is the development branch which means it contains the next 
 ## Release instructions
 
 1. Branch: Starting from `develop`, cut a release branch named `release/X.Y.Z` for your changes.
-2. Version bump: Bump the version number in `plugin.php`, `readme.txt`, and any other relevant files if it does not already reflect the version being released.
-3. Changelog: Add/update the changelog in `CHANGELOG.md` and `readme.txt`.
-4. Props: update `CREDITS.md` file with any new contributors, and confirm maintainers are accurate.
-5. New files: Check to be sure any new files/paths that are unnecessary in the production version are included in `.gitattributes` or `.distignore`.
-6. Readme updates: Make any other readme changes as necessary. `CHANGELOG.md` and `README.md` are geared toward GitHub and `readme.txt` contains WordPress.org-specific content. The two are slightly different.
-7. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk`, ensuring you pull the most recent changes into `develop` first (`git checkout develop && git pull origin develop && git checkout trunk && git merge --no-ff develop`). `trunk` contains the stable development version.
-8. Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
-9. Compare `trunk` to `develop` to ensure no additional changes were missed. Visit [REPOSITORY_URL]/compare/trunk...develop
-10. Test the pre-release ZIP locally by downloading it from the **Build release zip** action artifact and installing it locally. Ensure this zip has all the files we expect, that it installs and activates correctly and that all basic functionality is working.
-11. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [X.Y.Z milestone](/milestone/#?closed=1).
-12. SVN: Wait for the [GitHub Action](/actions) to finish deploying to the WordPress.org repository. If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
-13. Check WordPress.org: Ensure that the changes are live on https://wordpress.org/plugins/plugin-name/. This may take a few minutes.
-14. Close milestone: Edit the [X.Y.Z milestone](/milestone/#) with release date (in the `Due date (optional)` field) and link to GitHub release (in the `Description` field), then close the milestone.
-15. Punt incomplete items: If any open issues or PRs which were milestoned for `X.Y.Z` do not make it into the release, update their milestone to `X.Y.Z+1`, `X.Y+1.0`, `X+1.0.0` or `Future Release`.
+2. Version bump: Bump the version number in `package.json`, `package-lock.json`, `plugin.php`, `readme.txt`, and any other relevant files if it does not already reflect the version being released.
+3. Update packages: Run `npm update` so that `package-lock.json` gets updated from the version bump in `package.json` in the previous step as well as handle various available dependency updates.
+4. Changelog: Add/update the changelog in `CHANGELOG.md` (for GitHub) and `readme.txt` (for WordPress.org plugins).
+5. Props: update `CREDITS.md` file with any new contributors, confirm maintainers are accurate.
+6. New files: Check to be sure any new files/paths that are unnecessary in the production version are included in `.gitattributes` or `.distignore`.
+7. Readme updates: Make any other readme changes as necessary. `README.md` is geared toward GitHub and `readme.txt` contains WordPress.org-specific content. The two are slightly different.
+8. Merge: Make a non-fast-forward merge from your release branch to `develop` (or merge the pull request), then do the same for `develop` into `trunk`, ensuring you pull the most recent changes into `develop` first (`git checkout develop && git pull origin develop && git checkout trunk && git merge --no-ff develop`). `trunk` contains the stable development version.
+9. Push: Push your `trunk` branch to GitHub (e.g. `git push origin trunk`).
+10. [Compare](/compare/trunk...develop) `trunk` to `develop` to ensure no additional changes were missed.
+11. Test the pre-release ZIP locally by [downloading](/actions/workflows/build-release-zip.yml) it from the **Build release zip** action artifact and installing it locally. Ensure this zip builds correctly (especially after running `npm update`) has all the files we expect, that it installs and activates correctly and that all basic functionality is working.
+12. Release: Create a [new release](/releases/new), naming the tag and the release with the new version number, and targeting the `trunk` branch. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the [milestone](/milestone/#?closed=1).
+13. SVN: Wait for the [GitHub Action](/actions) to finish deploying to the WordPress.org repository. If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
+14. Check WordPress.org: Ensure that the changes are live on [WordPress.org](https://wordpress.org/plugins/plugin-name/). This may take a few minutes.
+15. Close milestone: Edit the [milestone](/milestone/#) with release date (in the `Due date (optional)` field) and link to GitHub release (in the `Description` field), then close the milestone.
+16. Punt incomplete items: If any open issues or PRs which were milestoned for `X.Y.Z` do not make it into the release, update their milestone to `X.Y.Z+1`, `X.Y+1.0`, `X+1.0.0` or `Future Release`.
 
 ### What to do if things go wrong
 
