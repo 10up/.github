@@ -29,16 +29,14 @@ Please include a summary for this PR, noting whether this is something being Add
 > Fixed - Bug fix
 > Security - Vulnerability
 
-
 ### Credits
 <!-- Please list any and all contributors on this PR so that they can be added to this projects CREDITS.md file. -->
 Props @username, @username2, ...
-
 
 ### Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you are unsure about any of these, please ask for clarification.  We are here to help! -->
 - [ ] I agree to follow this project's [**Code of Conduct**](https://github.com/10up/.github/blob/trunk/CODE_OF_CONDUCT.md).
 - [ ] I have updated the documentation accordingly.
-- [ ] I have added tests to cover my change.
+- [ ] I have added [Critical Flows, Test Cases, and/or End-to-End Tests](https://10up.github.io/Open-Source-Best-Practices/testing/) to cover my change.
 - [ ] All new and existing tests pass.
