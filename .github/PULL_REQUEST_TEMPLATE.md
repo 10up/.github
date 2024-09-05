@@ -28,6 +28,7 @@ Please include a summary for this PR, noting whether this is something being Add
 > Removed - Feature
 > Fixed - Bug fix
 > Security - Vulnerability
+> Developer - Non-functional update
 
 ### Credits
 <!-- Please list any and all contributors on this PR so that they can be added to this projects CREDITS.md file. -->
