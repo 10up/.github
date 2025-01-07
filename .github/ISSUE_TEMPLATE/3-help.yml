@@ -1,6 +1,7 @@
 name: "❓ Need help?"
 description: "Ask us a question, we are here to help!"
 labels: "type:question"
+type: "Task"
 body:
     - type: markdown
       attributes:
