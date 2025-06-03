@@ -24,5 +24,5 @@ As the WordPress and open source experts at Fueled, 10up strives to build websit
 
 ### Get In Touch
 
-<a href="http://10up.com/contact/"><img src="[https://10up.com/uploads/2016/10/10up-Github-Banner.png](https://fueled.com/wp-content/uploads/2025/06/10up-github-banner.webp)" alt="Work with the 10up WordPress Practice at Fueled"></a>
+<a href="http://10up.com/contact/"><img src="https://fueled.com/wp-content/uploads/2025/06/10up-github-banner.webp" alt="Work with the 10up WordPress Practice at Fueled"></a>
 </p>
