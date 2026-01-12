@@ -32,7 +32,7 @@ Please include a summary for this PR, noting whether this is something being Add
 
 ### Credits
 <!-- Please list any and all contributors on this PR so that they can be added to this projects CREDITS.md file. -->
-Props @username, @username2, ...
+Props @username, ...
 
 ### Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
