@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd #v6.0.2
 
     - name: Run stale_repos tool
-      uses: github/stale-repos@v1
+      uses: github-community-projects/stale-repos@f592689f914c623d9fb51a0372f15d05f9849b09 #v9.0.2
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN_READ_PUBLIC_REPOS }}
         ORGANIZATION: 10up
@@ -34,7 +34,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create issue from STALE_REPOS.md
-      uses: peter-evans/create-issue-from-file@v5
+      uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 #v6.0.0
       with:
         issue-number: ${{ env.issue_number }}
         title: Stale repository report
